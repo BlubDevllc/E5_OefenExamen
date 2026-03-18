@@ -1,6 +1,3 @@
-# Uitleen Systeem
-Een Laravel-gebaseerd uitleensysteem voor het beheren van producten en uitleningen.
-
 ## Installatie Instructies
 Volg deze stappen om het project lokaal te installeren na het downloaden van de ZIP:
 
