@@ -29,7 +29,7 @@ php artisan key:generate
 php artisan migrate
 
 # 6. Start de development server
-php artisan serve`
+php artisan serve
 
 
 
