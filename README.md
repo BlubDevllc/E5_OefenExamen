@@ -28,22 +28,8 @@ php artisan key:generate
 # stap 5. Maak de database aan
 php artisan migrate
 
-# 7. Installeer frontend dependencies
-npm install
-
-# 10. Compileer de frontend assets
-npm run build
-
-# 11. Start de development server
+# 6. Start de development server
 php artisan serve`
-
-De applicatie is nu beschikbaar op: `http://localhost:8000`
-je begint gelijk op het startscherm (index)
-u ziet 2 knoppen
-→ Starten met Uitlenen
-→ Producten Beheren
-als u op starten met uitlenen klikt kompt u op de pagina waar je een qr code Kan scannen
-en op producten beheren komt u op de pagina met alle producten u kunt dan met de nieuw product knop nieuwe toevoegen
 
 
 
