@@ -32,7 +32,7 @@ Route::middleware(['auth', 'verified', 'admin'])->prefix('admin')->group(functio
     Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
     Route::get('/users/{user}/edit', [AdminController::class, 'editUser'])->name('admin.edit-user');
     Route::put('/users/{user}', [AdminController::class, 'updateUser'])->name('admin.update-user');
-    Route::post('/users/{user}/role', [AdminController::class, 'updateRole'])->name('admin.update-role');
+    Route::post('/users/{user}/role/{role}', [AdminController::class, 'updateRole'])->name('admin.update-role');
     Route::delete('/users/{user}', [AdminController::class, 'deleteUser'])->name('admin.delete-user');
 });
 
