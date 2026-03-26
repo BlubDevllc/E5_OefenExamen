@@ -1,0 +1,150 @@
+/* ======================
+   Algemene Layout
+====================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ======================
+   Cards
+====================== */
+
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d7a2d;
+    margin-bottom: 10px;
+}
+
+.small-text {
+    color: #777;
+    font-size: 14px;
+}
+
+/* ======================
+   Buttons
+====================== */
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #2d7a2d;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary {
+    background: #555;
+}
+
+.btn-danger {
+    background: #c0392b;
+}
+
+/* ======================
+   Forms
+====================== */
+
+form {
+    margin-top: 15px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2d7a2d;
+}
+
+/* ======================
+   Alerts
+====================== */
+
+.alert-success {
+    background: #e6f4ea;
+    color: #2d7a2d;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.alert-error {
+    background: #fdecea;
+    color: #c0392b;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* ======================
+   Detail Page Styling
+====================== */
+
+.product-detail {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.product-meta {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
