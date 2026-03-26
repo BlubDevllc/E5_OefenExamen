@@ -6,13 +6,27 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-public function maker()
-{
-    return $this->belongsTo(User::class, 'maker_id');
-}
+    protected $fillable = [
+        'maker_id',
+        'naam',
+        'beschrijving',
+        'prijs',
+        'status',
+        'is_deleted',
+    ];
 
-public function reviews()
-{
-    return $this->hasMany(Review::class);
-}
+    protected $casts = [
+        'prijs' => 'decimal:2',
+        'is_deleted' => 'boolean',
+    ];
+
+    public function maker()
+    {
+        return $this->belongsTo(User::class, 'maker_id');
+    }
+
+    public function reviews()
+    {
+        return $this->hasMany(Review::class);
+    }
 }
